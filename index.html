@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HidroTabela</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="elemento.ico">
+</head>
+<body>
+    <div id="atom">
+        <img src="one_e.png" alt="" id="eletrosphere">
+        <button id="nuke"></button>
+        <img src="nucleo_p.png" alt="" id="core">
+        <h1 id="tittle">Hidrogênio</h1>
+        <button id="cc"><p id="pointer">&#9654;</p></button>
+        <div id="control">
+            <img src="radio.png" alt="" id="radio">
+            <img src="neu.png" alt="" id="net">
+            
+            <h1 id="massa">Massa ≈ 1,008</h1>
+            <h2>Elétrons:</h2>
+            <div id="eletronumb">
+                <button id="e0">0</button>
+                <button id="e1">1</button>
+                <button id="e2">2</button>
+            </div>
+            <h2>Nêutrons:</h2>
+            <div id="neutronumb">
+                <button id="n0">0</button>
+                <button id="n1">1</button>
+                <button id="n2">2</button>
+            </div>
+            <div id="tipo">
+                <button id="mat">Matéria</button>
+                <button id="ant">Antimatéria</button>
+            </div>
+        </div>
+    </div>
+    <h1>Tabela Hidrogênica</h1>
+    <div id="filter">
+        <button id="all">Todos</button>
+        <button id="pos">Positivos</button>
+        <button id="neg">Negativos</button>
+        <button id="neu">Neutros</button>
+        <button id="rad">Radioativos</button>
+        <button id="nrad">Não Radioativos</button>
+        <button id="matfil">Matéria</button>
+        <button id="antfil">Antimatéria</button>
+    </div>
+    <div id="table">
+
+        <!--Hidrogênio padrão-->
+        <div class="element">
+            <h1>1</h1>
+            <button id="h1">
+                <img src="nucleo_p.png" alt="" class="internuke">
+                <img src="one_e.png" alt="" class="intereletro">
+            </button>
+            <h1>Hidrogênio <br> 1,008</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="h1c">
+                <img src="nucleo_p.png" alt="" class="internuke">
+            </button>
+            <h1>Hidrogênio(Cátion)<br> 1,007</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="h1a">
+                <img src="nucleo_p.png" alt="" class="internuke">
+                <img src="two_e.png" alt="" class="intereletro">
+            </button>
+            <h1>Hidrogênio(Ânion)<br> 1,008</h1>
+        </div>
+
+        <!--Hidrogênio-2-->
+        <div class="element">
+            <h1>1</h1>
+            <button id="h2">
+                <img src="nucleo_pn.png" alt="" class="internuke">
+                <img src="one_e.png" alt="" class="intereletro">
+            </button>
+            <h1>Hidrogênio-2<br> 2,0141</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="h2c">
+                <img src="nucleo_pn.png" alt="" class="internuke">
+            </button>
+            <h1>Hidrogênio-2(Cátion)<br>2,0135</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="h2a">
+                <img src="nucleo_pn.png" alt="" class="internuke">
+                <img src="two_e.png" alt="" class="intereletro">
+            </button>
+            <h1>Hidrogênio-2(Ânion)<br>2,0146</h1>
+        </div>
+
+        <!--Hidrogênio-3-->
+        <div class="element">
+            <h1>1</h1>
+            <button id="h3">
+                <img src="nucleo_pnn.png" alt="" class="internuke">
+                <img src="one_e.png" alt="" class="intereletro">
+            </button>
+            <h1>Hidrogênio-3<br>3,0155</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="h3c">
+                <img src="nucleo_pnn.png" alt="" class="internuke">
+            </button>
+            <h1>Hidrogênio-3(Cátion)<br>3,0155</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="h3a">
+                <img src="nucleo_pnn.png" alt="" class="internuke">
+                <img src="two_e.png" alt="" class="intereletro">
+            </button>
+            <h1>Hidrogênio-3(Ânion)<br>3,0165</h1>
+        </div>
+
+        <!--Anti-Hidrogênio-->
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah1">
+                <img src="nucleo_ap.png" alt="" class="internuke">
+                <img src="one_pos.png" alt="" class="intereletro">
+            </button>
+            <h1>Anti-Hidrogênio<br> 1,008</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah1c">
+                <img src="nucleo_ap.png" alt="" class="internuke">
+            </button>
+            <h1>Anti-Hidrogênio(Cátion)<br> 1,007</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah1a">
+                <img src="nucleo_ap.png" alt="" class="internuke">
+                <img src="two_pos.png" alt="" class="intereletro">
+            </button>
+            <h1>Anti-Hidrogênio(Ânion)<br> 1,008</h1>
+        </div>
+
+        <!--Anti-Hidrogênio-2-->
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah2">
+                <img src="nucleo_apan.png" alt="" class="internuke">
+                <img src="one_pos.png" alt="" class="intereletro">
+            </button>
+            <h1>Anti-Hidrogênio-2<br> 2,0141</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah2c">
+                <img src="nucleo_apan.png" alt="" class="internuke">
+            </button>
+            <h1>Anti-Hidrogênio-2(Cátion)<br>2,0135</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah2a">
+                <img src="nucleo_apan.png" alt="" class="internuke">
+                <img src="two_pos.png" alt="" class="intereletro">
+            </button>
+            <h1>Anti-Hidrogênio-2(Ânion)<br>2,0146</h1>
+        </div>
+
+        <!--Anti-Hidrogênio-3-->
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah3">
+                <img src="nucleo_apanan.png" alt="" class="internuke">
+                <img src="one_pos.png" alt="" class="intereletro">
+            </button>
+            <h1>Anti-Hidrogênio-3<br>3,0155</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah3c">
+                <img src="nucleo_apanan.png" alt="" class="internuke">
+            </button>
+            <h1>Anti-Hidrogênio-3(Cátion)<br>3,0155</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah3a">
+                <img src="nucleo_apanan.png" alt="" class="internuke">
+                <img src="two_pos.png" alt="" class="intereletro">
+            </button>
+            <h1>Anti-Hidrogênio-3(Ânion)<br>3,0165</h1>
+        </div>
+
+        <!--Metal-->
+        <div class="element">
+            <h1>1</h1>
+            <button id="h1m">
+                <img src="nucleo_p.png" alt="" class="internuke">
+                <img src="cloud_e.png" alt="" class="intereletro">
+            </button>
+            <h1>Hidrogênio(Metálico)<br> 1,008</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="h2m">
+                <img src="nucleo_pn.png" alt="" class="internuke">
+                <img src="cloud_e.png" alt="" class="intereletro">
+            </button>
+            <h1>Hidrogênio-2(Metálico)<br> 2,0141</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="h3m">
+                <img src="nucleo_pnn.png" alt="" class="internuke">
+                <img src="cloud_e.png" alt="" class="intereletro">
+            </button>
+            <h1>Hidrogênio-3(Metálico)<br> 3,0165</h1>
+        </div>
+
+        <!--Anti-Metal-->
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah1m">
+                <img src="nucleo_ap.png" alt="" class="internuke">
+                <img src="cloud_pos.png" alt="" class="intereletro">
+            </button>
+            <h1>Anti-Hidrogênio(Metálico)<br> 1,008</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah2m">
+                <img src="nucleo_apan.png" alt="" class="internuke">
+                <img src="cloud_pos.png" alt="" class="intereletro">
+            </button>
+            <h1>Anti-Hidrogênio-2(Metálico)<br> 2,0141</h1>
+        </div>
+        <div class="element">
+            <h1>1</h1>
+            <button id="ah3m">
+                <img src="nucleo_apanan.png" alt="" class="internuke">
+                <img src="cloud_pos.png" alt="" class="intereletro">
+            </button>
+            <h1>Anti-Hidrogênio-3(Metálico)<br> 3,0165</h1>
+        </div>
+
+
+    </div>
+    <footer>
+        <h1>Esse é um site de portfólio criado por <a href="https://www.instagram.com/wendel_yin/" target="_blank">Wendel Gapar</a>, contendo html, css e javascript. clique no link para ver mais sobre o autor</h1>
+    </footer>
+    <script src="func.js"></script>
+</body>
+</html>
