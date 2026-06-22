@@ -312,6 +312,18 @@ a:hover{
 }
 
 @media (max-width: 768px){
+    #table{
+        place-items: center;
+        align-items: flex-start;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        width: min(1200px, 95vw);
+        min-height: 1600px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
 
     #mat,
     #ant{
@@ -328,28 +340,43 @@ a:hover{
 
     #control{
         height: 400px;
-        margin-left: 340px;
-        width: 160px;
+        margin-left: 230px;
+        width: 110px;
     }
 
     #neutronumb > button{
-        height: 30px;
-        width: 30px;
+        height: 20px;
+        width: 20px;
+        border-radius: 4px;
     }
 
     #eletronumb > button{
-        height: 30px;
-        width: 30px;
+        height: 20px;
+        width: 20px;
+        border-radius: 4px;
     }
+
+    #neutronumb{
+        gap: 15px;
+    }
+
+    #eletronumb{
+        gap: 15px;
+    }
+
 
     #tipo{
         gap: 10px;
     }
 
     #cc{
-        font-size: 9px;
-        width: 10px;
-        height: 10px;
+        font-size: 12px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #tipo{
+        flex-direction: column;
     }
 
     #tipo > button{
@@ -364,7 +391,7 @@ a:hover{
         opacity: 0.2;
         width: 20px;
         bottom: 90%;
-        right: 93%;
+        right: 89%;
         transform: translate(-50%, -50%);
     }
 
@@ -373,8 +400,8 @@ a:hover{
         position: absolute;
         height: 20px;
         width: 20px;
-        bottom: 83%;
-        right: 93.1%;
+        bottom: 80%;
+        right: 89%;
         opacity: 0.4;
         transform: translate(-50%, -50%);
     }
@@ -387,13 +414,18 @@ a:hover{
 
     #eletrosphere,
     #core{
-        width: 250px;
+        width: 150px;
     }
 
     .element{
-        width: 160px;
+        width: 100px;
         height: 160px;
-        gap: 20px;
+        gap: 10px;
+    }
+
+    .element > h1{
+        font-size: 8px;
+        font-weight: bold;
     }
 
     #filter{
@@ -401,14 +433,28 @@ a:hover{
     }
 
     h1{
-        font-size: 16px;
+        font-size: 10px;
     }
 
     h2{
-        font-size: 18px;
+        font-size: 10px;
     }
 
     #tittle{
-        font-size: 20px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    footer > h1{
+        font-size: 10px;
+    }
+
+    .element > button > img{
+        height: 90px;
+        width: 90px;
+    }
+    
+    .element:hover{
+        transform: none;
     }
 }
