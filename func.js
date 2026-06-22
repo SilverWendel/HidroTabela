@@ -57,6 +57,7 @@ const tabela = document.getElementById("table");
 
 const metal = document.getElementById("nuke");
 
+let fil = "all";
 let n = 0;
 let e = 1;
 let anti = false;
@@ -293,15 +294,84 @@ window.addEventListener("resize", function(){
     if(control == true){
         if(window.innerWidth <= 768){
             cc.style.left = "65%";
+
+            if(fil == "all"){
+                tabela.style.minHeight = "1600px";
+
+            }
+            if(fil == "pos"){
+                tabela.style.minHeight = "400px";
+
+            }
+            if(fil == "neg"){
+                tabela.style.minHeight = "400px";
+
+            }
+            if(fil == "neu"){
+                tabela.style.minHeight = "800px";
+
+            }
+            if(fil == "radi"){
+                tabela.style.minHeight = "600px";
+
+            }
+            if(fil == "nrad"){
+                tabela.style.minHeight = "1200px";
+
+            }
+            if(fil == "mat"){
+                tabela.style.minHeight = "800px";
+
+            }
+            if(fil == "ant"){
+                tabela.style.minHeight = "800px";
+
+            }
         }
         else{
             cc.style.left = "73%";
+            if(fil == "all"){
+                tabela.style.minHeight = "2400px";
+                tabela.style.height = "auto";
+            }
+            if(fil == "pos"){
+                tabela.style.minHeight = "600px";
+                tabela.style.height = "auto";
+
+            }
+            if(fil == "neg"){
+                tabela.style.minHeight = "600px";
+                tabela.style.height = "auto";
+
+            }
+            if(fil == "neu"){
+                tabela.style.minHeight = "1200px";
+                tabela.style.height = "auto";
+            }
+            if(fil == "radi"){
+                tabela.style.minHeight = "900px";
+                tabela.style.height = "auto";
+            }
+            if(fil == "nrad"){
+                tabela.style.minHeight = "1800px";
+                tabela.style.height = "auto";
+            }
+            if(fil == "mat"){
+                tabela.style.minHeight = "1200px";
+                tabela.style.height = "auto";
+            }
+            if(fil == "ant"){
+                tabela.style.minHeight = "1200px";
+                tabela.style.height = "auto";
+            }
         }
     }
 
 });
 
 all.onclick = function(){
+    fil = "all";
+
     all.style.borderColor = "white";
     all.style.boxShadow = "inset 0px 0px 8px 0px white";
     pos.style.borderColor = "rgb(98, 98, 98)";
@@ -345,13 +415,19 @@ all.onclick = function(){
     ah2m.parentNode.style.display = "flex";
     ah3m.parentNode.style.display = "flex";
 
-    tabela.style.minHeight = "2400px";
-    tabela.style.height = "auto";
+    if(window.innerWidth <= 768){
+        tabela.style.minHeight = "1600px";
+    }else{
+        tabela.style.minHeight = "2400px";
+        tabela.style.height = "auto";
+    }
     tabela.style.gridTemplateRows = "repeat(8, 1fr)";
 
 }
 
 pos.onclick = function(){
+    fil = "pos";
+
     pos.style.borderColor = "white";
     pos.style.boxShadow = "inset 0px 0px 8px 0px white";
     all.style.borderColor = "rgb(98, 98, 98)";
@@ -395,12 +471,18 @@ pos.onclick = function(){
     ah2m.parentNode.style.display = "none";
     ah3m.parentNode.style.display = "none";
 
-    tabela.style.minHeight = "600px";
-    tabela.style.height = "auto";
+    if(window.innerWidth <= 768){
+        tabela.style.minHeight = "400px";
+    }else{
+        tabela.style.minHeight = "600px";
+        tabela.style.height = "auto";
+    }
+
     tabela.style.gridTemplateRows = "repeat(2, 1fr)";
 }
 
 neg.onclick = function(){
+    fil = "neg";
     neg.style.borderColor = "white";
     neg.style.boxShadow = "inset 0px 0px 8px 0px white";
     pos.style.borderColor = "rgb(98, 98, 98)";
@@ -444,12 +526,18 @@ neg.onclick = function(){
     ah2m.parentNode.style.display = "none";
     ah3m.parentNode.style.display = "none";
 
-    tabela.style.minHeight = "600px";
-    tabela.style.height = "auto";
+    if(window.innerWidth <= 768){
+        tabela.style.minHeight = "400px";
+    }else{
+        tabela.style.minHeight = "600px";
+        tabela.style.height = "auto";
+    }
+
     tabela.style.gridTemplateRows = "repeat(2, 1fr)";
 }
 
 neu.onclick = function(){
+    fil = "neu";
     neu.style.borderColor = "white";
     neu.style.boxShadow = "inset 0px 0px 8px 0px white";
     pos.style.borderColor = "rgb(98, 98, 98)";
@@ -493,13 +581,19 @@ neu.onclick = function(){
     ah2m.parentNode.style.display = "flex";
     ah3m.parentNode.style.display = "flex";
 
-    tabela.style.minHeight = "1200px";
-    tabela.style.height = "auto";
+    if(window.innerWidth <= 768){
+        tabela.style.minHeight = "800px";
+    }else{
+        tabela.style.minHeight = "1200px";
+        tabela.style.height = "auto";
+    }
+
     tabela.style.gridTemplateRows = "repeat(4, 1fr)";
 
 }
 
 radi.onclick = function(){
+    fil = "radi";
     radi.style.borderColor = "white";
     radi.style.boxShadow = "inset 0px 0px 8px 0px white";
     pos.style.borderColor = "rgb(98, 98, 98)";
@@ -543,13 +637,19 @@ radi.onclick = function(){
     ah2m.parentNode.style.display = "none";
     ah3m.parentNode.style.display = "flex";
 
-    tabela.style.minHeight = "900px";
-    tabela.style.height = "auto";
+    if(window.innerWidth <= 768){
+        tabela.style.minHeight = "600px";
+    }else{
+        tabela.style.minHeight = "900px";
+        tabela.style.height = "auto";
+    }
+
     tabela.style.gridTemplateRows = "repeat(3, 1fr)";
 
 }
 
 nrad.onclick = function(){
+    fil = "nrad";
     nrad.style.borderColor = "white";
     nrad.style.boxShadow = "inset 0px 0px 8px 0px white";
     pos.style.borderColor = "rgb(98, 98, 98)";
@@ -593,13 +693,19 @@ nrad.onclick = function(){
     ah2m.parentNode.style.display = "flex";
     ah3m.parentNode.style.display = "none";
 
-    tabela.style.minHeight = "1800px";
-    tabela.style.height = "auto";
+    if(window.innerWidth <= 768){
+        tabela.style.minHeight = "1200px";
+    }else{
+        tabela.style.minHeight = "1800px";
+        tabela.style.height = "auto";
+    }
+
     tabela.style.gridTemplateRows = "repeat(6, 1fr)";
 
 }
 
 mat.onclick = function(){
+    fil = "mat";
     mat.style.borderColor = "white";
     mat.style.boxShadow = "inset 0px 0px 8px 0px white";
     pos.style.borderColor = "rgb(98, 98, 98)";
@@ -643,13 +749,19 @@ mat.onclick = function(){
     ah2m.parentNode.style.display = "none";
     ah3m.parentNode.style.display = "none";
 
-    tabela.style.minHeight = "1200px";
-    tabela.style.height = "auto";
+    if(window.innerWidth <= 768){
+        tabela.style.minHeight = "800px";
+    }else{
+        tabela.style.minHeight = "1200px";
+        tabela.style.height = "auto";
+    }
+
     tabela.style.gridTemplateRows = "repeat(4, 1fr)";
 
 }
 
 ant.onclick = function(){
+    fil = "ant";
     ant.style.borderColor = "white";
     ant.style.boxShadow = "inset 0px 0px 8px 0px white";
     pos.style.borderColor = "rgb(98, 98, 98)";
@@ -693,8 +805,13 @@ ant.onclick = function(){
     ah2m.parentNode.style.display = "flex";
     ah3m.parentNode.style.display = "flex";
 
-    tabela.style.minHeight = "1200px";
-    tabela.style.height = "auto";
+    if(window.innerWidth <= 768){
+        tabela.style.minHeight = "800px";
+    }else{
+        tabela.style.minHeight = "1200px";
+        tabela.style.height = "auto";
+    }
+
     tabela.style.gridTemplateRows = "repeat(4, 1fr)";
 
 }
