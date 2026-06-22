@@ -315,54 +315,54 @@ a:hover{
 
     #mat,
     #ant{
-        font-size: 5px;
+        font-size: 10px;
     }
 
     #filter{
-        margin-bottom: 25px;
+        margin-bottom: 50px;
     }
 
     #atom{
-        height: 200px;
+        height: 400px;
     }
 
     #control{
-        height: 200px;
-        margin-left: 170px;
-        width: 80px;
+        height: 400px;
+        margin-left: 340px;
+        width: 160px;
     }
 
     #neutronumb > button{
-        height: 15px;
-        width: 15px;
+        height: 30px;
+        width: 30px;
     }
 
     #eletronumb > button{
-        height: 15px;
-        width: 15px;
+        height: 30px;
+        width: 30px;
     }
 
     #tipo{
-        gap: 5px;
+        gap: 10px;
     }
 
     #cc{
-        font-size: 4.5px;
-        width: 5px;
-        height: 5px;
+        font-size: 9px;
+        width: 10px;
+        height: 10px;
     }
 
     #tipo > button{
-        width: 35px;
-        height: 25px;
+        width: 70px;
+        height: 50px;
     }
 
     #radio{
         margin: 0px;
         position: absolute;
-        height: 10px;
+        height: 20px;
         opacity: 0.2;
-        width: 10px;
+        width: 20px;
         bottom: 90%;
         right: 93%;
         transform: translate(-50%, -50%);
@@ -371,8 +371,8 @@ a:hover{
     #net{
         margin: 0px;
         position: absolute;
-        height: 10px;
-        width: 10px;
+        height: 20px;
+        width: 20px;
         bottom: 83%;
         right: 93.1%;
         opacity: 0.4;
@@ -380,20 +380,20 @@ a:hover{
     }
 
     #nuke{
-        width: 25px;
-        height: 25px;
+        width: 50px;
+        height: 50px;
     }
 
 
     #eletrosphere,
     #core{
-        width: 125px;
+        width: 250px;
     }
 
     .element{
-        width: 80px;
-        height: 80px;
-        gap: 10px;
+        width: 160px;
+        height: 160px;
+        gap: 20px;
     }
 
     #filter{
@@ -401,14 +401,14 @@ a:hover{
     }
 
     h1{
-        font-size: 8px;
+        font-size: 16px;
     }
 
     h2{
-        font-size: 9px;
+        font-size: 18px;
     }
 
     #tittle{
-        font-size: 10px;
+        font-size: 20px;
     }
 }
